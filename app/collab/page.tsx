@@ -1,10 +1,10 @@
 import { Room } from '../Room';
-import { CollaborativeApp } from '../components/collaboration/CollaborativeLiveApp';
+import RoomManager from '../components/collaboration/RoomManager';
 
 const page = () => {
   return (
     <Room>
-      <CollaborativeApp />
+      <RoomManager />
     </Room>
   );
 };

@@ -8,12 +8,10 @@ import { ReactNode } from 'react';
 
 export function Room({ children }: { children: ReactNode }) {
   return (
-    <LiveblocksProvider
-      publicApiKey={process.env.NEXT_PUBLIC_LIVEBLOCKS_PUBLIC_KEY}
-    >
-      <RoomProvider id="my-room">
+    <LiveblocksProvider authEndpoint="/api/liveblocks-auth">
+      <RoomProvider id="my-room" initialPresence={{}}>
         <ClientSideSuspense fallback={<div>Loading....</div>}>
-          \{children}
+          {() => children}
         </ClientSideSuspense>
       </RoomProvider>
     </LiveblocksProvider>
