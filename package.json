@@ -10,6 +10,9 @@
   },
   "dependencies": {
     "@clerk/nextjs": "6.9.12",
+    "@liveblocks/client": "^2.18.1",
+    "@liveblocks/node": "^2.18.1",
+    "@liveblocks/react": "^2.18.1",
     "@types/node": "^22.10.7",
     "@types/react": "^19.0.7",
     "@types/react-dom": "^19.0.3",
